@@ -1,0 +1,88 @@
+@import "~bootstrap";
+
+$green: #5CDB95;
+$black: #05386B;
+$white: #EDF5E1;
+
+body {
+    background-color: $green;
+    color: $black;
+    font-family: 'Courier New', Courier, monospace;
+
+    .navbar{
+        padding: 1rem;
+        background-color: $green;
+
+        .navbar-brand{
+            color: $black;
+        }
+
+        .navbar-brand:hover{
+            color: $white;
+        }
+    }
+
+    .row{
+
+        h2{
+            margin: 1rem;
+        }
+
+        .col{
+
+            .contact-list{
+                margin: 1rem;
+                overflow-x: hidden;
+                overflow-y: scroll;
+                max-height: 20rem;
+            }
+            
+            .contact-list::-webkit-scrollbar {
+                width: 3px;
+            }
+              
+            .contact-list::-webkit-scrollbar-track {
+                background: $green;
+            }
+            
+            .contact-list::-webkit-scrollbar-thumb {
+                background: $black;
+            }
+              
+            .contact-list::-webkit-scrollbar-thumb:hover {
+                background: $black;
+            }
+
+            hr{
+                margin: 0 0 2rem 0;
+            }
+        }
+
+        form{
+            margin: 1rem;
+        }
+
+        .form-group{
+            margin-bottom: 1rem;
+
+            input{
+                background-color: $white;
+            }
+
+            textarea{
+                resize: none;
+                background-color: $white;
+            }
+
+            button {
+                background-color: $black;
+                color: $green;
+            }
+        }        
+    }
+
+    .alert-success{
+        background-color: $black;
+        color: $green;
+    }
+}

@@ -1,0 +1,15 @@
+<div class="col">
+    <h2>Eddigi üzenetek ({{ contacts|length }}):</h2>
+    
+    <div class="contact-list">
+        {% for contact in contacts %}
+            <div class="row">
+                <p>{{ attribute(contact, 'name') }} &lt;<i><a href="mailto:{{ attribute(contact, 'email') }}">{{ attribute(contact, 'email') }}</a></i>&gt;</p>
+                <p>
+                    <i>"{{ attribute(contact, 'message') }}"</i>
+                </p>
+            </div>
+            <hr>
+        {% endfor %}
+    </div>
+</div>
