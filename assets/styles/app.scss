@@ -8,6 +8,8 @@ body {
     background-color: $green;
     color: $black;
     font-family: 'Courier New', Courier, monospace;
+    max-width: 95%;
+    margin: auto;
 
     .navbar{
         padding: 1rem;
@@ -35,6 +37,10 @@ body {
                 overflow-x: hidden;
                 overflow-y: scroll;
                 max-height: 20rem;
+
+                .row{
+                    max-width: 90%;
+                }
             }
             
             .contact-list::-webkit-scrollbar {
@@ -55,6 +61,7 @@ body {
 
             hr{
                 margin: 0 0 2rem 0;
+                max-width: 85%;
             }
         }
 
