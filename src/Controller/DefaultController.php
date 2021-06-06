@@ -15,7 +15,7 @@ class DefaultController extends AbstractController
     /**
      * @Route("/", name="home", methods={"GET", "POST"})
      */
-    public function index(Request $request, ContactRepository $contactRepository): Response
+    public function index(Request $request, ContactRepository $contactRepository)
     {
         $form = $this->createForm(ContactType::class, new Contact());
 
